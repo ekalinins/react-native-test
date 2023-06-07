@@ -78,6 +78,11 @@ def enableProguardInReleaseBuilds = false
  */
 def jscFlavor = 'org.webkit:android-jsc:+'
 
+project.ext.react = [
+    enableHermes: false,  // clean and rebuild if changing
+]
+
+def enableHermes = project.ext.react.get("enableHermes", false)
 /**
  * Private function to get the list of Native Architectures you want to build.
  * This reads the value from reactNativeArchitectures in your gradle.properties
