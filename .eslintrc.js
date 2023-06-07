@@ -96,6 +96,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+      node: {
+        moduleDirectory: ['node_modules', 'src/'],
+      },
     },
   },
 };
