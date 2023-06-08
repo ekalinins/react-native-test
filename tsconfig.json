@@ -2,18 +2,16 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
   "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
-    "jsx": "react-jsx",
+  /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
-    /* Completeness */
-    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "target": "esnext",
-    "baseUrl": ".",
-    "exclude": ["node_modules"],
-    "paths": {
+  /* Completeness */
+  "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+  "target": "esnext",
+  "baseUrl": ".",
+  "paths": {
       "*": ["src/*"],
-      "@env": ["node_modules/react-native-dotenv"] // this mapping is relative to "baseUrl"
-    }
+      "@env": ["node_modules/react-native-dotenv"]
+    },
   }
 }
 
