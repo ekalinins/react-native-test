@@ -7,7 +7,7 @@ const RouteStack = createStackNavigator<MainStackParamList>();
 export const Router = () => {
   return (
     <RouteStack.Navigator
-      screenOptions={{ headerShown: false, cardStyle: { paddingHorizontal: 10 } }}
+      screenOptions={{ headerShown: false, cardStyle: { paddingHorizontal: 20 } }}
       initialRouteName="Home"
     >
       <RouteStack.Screen name="Home" component={Home} />
